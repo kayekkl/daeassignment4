@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>聯絡我們 | Contact Us - 開源硬體大全 | Open Source Hardware Collection</title>
+
+    <!-- Ionic 框架 CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"
+    />
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"
+    ></script>
+
+    <!-- 自定義樣式 -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <ion-app>
+      <ion-header>
+        <ion-toolbar color="primary">
+          <ion-buttons slot="start">
+            <ion-back-button
+              default-href="index.html"
+              href="index.html"
+              text="返回"
+              data-en-text="Back"
+            ></ion-back-button>
+          </ion-buttons>
+          <ion-title>
+            <span class="zh">聯絡我們</span>
+            <span class="en">Contact Us</span>
+          </ion-title>
+          <ion-buttons slot="end">
+            <ion-button id="language-toggle">
+              <ion-icon slot="icon-only" name="language-outline"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+      </ion-header>
+
+      <ion-content class="ion-padding">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>
+              <span class="zh">聯絡表單</span>
+              <span class="en">Contact Form</span>
+            </ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <form id="contact-form">
+              <ion-item>
+                <ion-label position="floating">
+                  <span class="zh">姓名</span>
+                  <span class="en">Name</span>
+                </ion-label>
+                <ion-input type="text" id="name" required></ion-input>
+              </ion-item>
+
+              <ion-item>
+                <ion-label position="floating">
+                  <span class="zh">電子郵件</span>
+                  <span class="en">Email</span>
+                </ion-label>
+                <ion-input type="email" id="email" required></ion-input>
+              </ion-item>
+
+              <ion-item>
+                <ion-label position="floating">
+                  <span class="zh">主旨</span>
+                  <span class="en">Subject</span>
+                </ion-label>
+                <ion-input type="text" id="subject" required></ion-input>
+              </ion-item>
+
+              <ion-item>
+                <ion-label position="floating">
+                  <span class="zh">訊息</span>
+                  <span class="en">Message</span>
+                </ion-label>
+                <ion-textarea id="message" rows="6" required></ion-textarea>
+              </ion-item>
+
+              <ion-button expand="block" type="submit" class="ion-margin-top">
+                <span class="zh">送出</span>
+                <span class="en">Submit</span>
+              </ion-button>
+            </form>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>
+              <span class="zh">聯絡資訊</span>
+              <span class="en">Contact Information</span>
+            </ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-item>
+              <ion-icon name="mail-outline" slot="start"></ion-icon>
+              <ion-label>
+                <h2>
+                  <span class="zh">電子郵件</span>
+                  <span class="en">Email</span>
+                </h2>
+                <p>contact@hardwareapp.example.com</p>
+              </ion-label>
+            </ion-item>
+
+            <ion-item>
+              <ion-icon name="logo-facebook" slot="start"></ion-icon>
+              <ion-label>
+                <h2>Facebook</h2>
+                <p>fb.com/hardwareapp</p>
+              </ion-label>
+            </ion-item>
+
+            <ion-item>
+              <ion-icon name="logo-instagram" slot="start"></ion-icon>
+              <ion-label>
+                <h2>Instagram</h2>
+                <p>@hardwareapp</p>
+              </ion-label>
+            </ion-item>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>
+              <span class="zh">常見問題</span>
+              <span class="en">Frequently Asked Questions</span>
+            </ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <ion-accordion-group>
+              <ion-accordion value="first">
+                <ion-item slot="header">
+                  <ion-label>
+                    <span class="zh">如何使用本應用程式？</span>
+                    <span class="en">How to use this application?</span>
+                  </ion-label>
+                </ion-item>
+                <div slot="content" class="ion-padding">
+                  <p class="zh">
+                    您可以在首頁使用搜尋欄或分類選單來找到適合您的開源硬體。
+                  </p>
+                  <p class="en">
+                    You can use the search bar or category menus on the home
+                    page to find Hareware suitable for you. 
+                  </p>
+                </div>
+              </ion-accordion>
+
+              <ion-accordion value="second">
+                <ion-item slot="header">
+                  <ion-label>
+                    <span class="zh">什麼是開源硬體？</span>
+                    <span class="en">What is OpenSource Hardwarez?</span>
+                  </ion-label>
+                </ion-item>
+                <div slot="content" class="ion-padding">
+                  <p class="zh">
+                    開源硬體，即OpenSource Hardware ，是一個指有形的造物：機器、設備或其它物理東西的術語——其設計向公眾發布，任何人可以製造、修改、分發並使用那些造物。 」
+隨著物聯網和電子技術的發展，現在越來越多的硬體開始開源了，也許在你身邊用到的某一塊主機板就是開源硬體。
+
+                  </p>
+                  <p class="en">
+                    Open-source hardware, also known as Open Source Hardware, refers to tangible creations such as machines, devices, or other physical objects whose designs are made publicly available. Anyone can manufacture, modify, distribute, and use these creations.
+                    With the development of the Internet of Things (IoT) and electronic technology, more and more hardware is becoming open-source. Perhaps a motherboard you are using right now is open-source hardware.
+                  </p>
+                </div>
+              </ion-accordion>
+            </ion-accordion-group>
+          </ion-card-content>
+        </ion-card>
+      </ion-content>
+    </ion-app>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const contactForm = document.getElementById("contact-form");
+
+        contactForm.addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          const name = document.getElementById("name").value;
+          const email = document.getElementById("email").value;
+          const subject = document.getElementById("subject").value;
+          const message = document.getElementById("message").value;
+
+          // 在實際應用中，這裡會發送表單數據到服務器
+          // 這裡只是模擬提交成功的效果
+          const alert = document.createElement("ion-alert");
+
+          // 根據當前語言設置提示信息
+          const isEnglish =
+            document.documentElement.getAttribute("lang") === "en";
+          alert.header = isEnglish ? "Message Sent" : "訊息已送出";
+          alert.message = isEnglish
+            ? "Thank you for contacting us! We will reply to you as soon as possible."
+            : "感謝您的聯絡！我們會盡快回覆您。";
+          alert.buttons = [isEnglish ? "OK" : "確定"];
+
+          document.body.appendChild(alert);
+          alert.present();
+
+          // 清除表單
+          contactForm.reset();
+        });
+      });
+    </script>
+
+    <!-- 自定義 JavaScript -->
+    <script src="js/language.js"></script>
+  </body>
+</html>
