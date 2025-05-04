@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="ion-padding ion-text-center">
                         <ion-icon name="lock-closed-outline" size="large" color="medium"></ion-icon>
                         <h2>請先登入</h2>
-                        <p>您需要登入才能查看收藏的瑜伽動作</p>
+                        <p>您需要登入才能查看收藏</p>
                         <ion-button expand="block" onclick="window.location.href='login.html'">前往登入</ion-button>
                     </div>
                 `;
@@ -81,8 +81,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="ion-padding ion-text-center">
                         <ion-icon name="bookmark-outline" size="large" color="medium"></ion-icon>
                         <h2>暫無收藏</h2>
-                        <p>您還沒有收藏任何瑜伽動作</p>
-                        <ion-button expand="block" onclick="window.location.href='index.html'">瀏覽瑜伽動作</ion-button>
+                        <p>您還沒有任何收藏</p>
+                        <ion-button expand="block" onclick="window.location.href='index.html'">瀏覽開源硬體</ion-button>
                     </div>
                 `;
                 return;
