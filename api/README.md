@@ -1,4 +1,4 @@
-# 瑜伽應用程式 API 服務
+# 應用程式 API 服務
 
 這是一個使用 Express 和 TypeScript 實現的瑜伽應用程式後端 API 服務。
 

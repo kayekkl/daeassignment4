@@ -40,6 +40,9 @@
             <ion-button href="contact.html">
               <ion-icon slot="icon-only" name="mail-outline"></ion-icon>
             </ion-button>
+              <ion-button id="language-toggle">
+                <ion-icon slot="icon-only" name="language-outline"></ion-icon>
+              </ion-button>
           </ion-buttons>
         </ion-toolbar>
       </ion-header>
@@ -52,6 +55,14 @@
             id="searchbar"
             data-en-placeholder="Search Open Source Hardware"
           ></ion-searchbar>  
+
+          <ion-button id="sort-button">
+            <ion-icon slot="start" name="arrow-up-outline"></ion-icon>
+            <span class="zh">按字母排序</span>
+            <span class="en">Sort A-Z</span>
+          </ion-button>
+          </div>
+          
 
         <ion-list id="yoga-list">
           <!-- 開源硬體項目會通過 JavaScript 動態加載 -->
