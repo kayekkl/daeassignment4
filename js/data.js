@@ -74,8 +74,8 @@ const yogaPoses = [
         effect_en: "Mini Single-Board Computer, Embedded systems, education, IoT prototyping.",
         caution: "小於名片尺寸，超便攜",
         caution_en: "Smaller than a business card, ultra-portable",
-        image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbZiGgjSA_YdRsnZhaZUfaAaufk-g5MT74BQ&s",
-        video: "https://www.youtube.com/watch?v=2nyP1a_Vp9Q&ab_channel=%E5%B0%8FK%E8%A8%93%E7%B7%B4%E6%97%A5%E5%B8%B8"
+        image: "https://www.beagleboard.org/app/uploads/2021/04/PocketBeagle_GamePup.png",
+        video: "https://www.youtube.com/watch?v=6m01aJfvvYU&ab_channel=Maker.io"
     },
     {
         id: 8,
